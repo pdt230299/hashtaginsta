@@ -42,28 +42,32 @@ var hastagold=[
 
 document.getElementsByClassName("big-button")[0].addEventListener("click", function() {
 var arrayRandomHashTag=[];
-var randomnumber = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
-for(var i=0;i<randomnumber;i++){
+var randomnumber1 = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+    var randomnumber2 = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+    var randomnumber3 = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+    var randomnumber4 = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+    var randomnumber5 = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+for(var i=0;i<randomnumber1;i++){
     var item =  hashtag2hand[Math.floor(Math.random() * hashtag2hand.length)];
     arrayRandomHashTag.push(item);
 }
     console.log(arrayRandomHashTag);
-for(var i=0;i<randomnumber;i++){
+for(var i=0;i<randomnumber2;i++){
      var item =  hashtagvintage[Math.floor(Math.random() * hashtagvintage.length)];
     arrayRandomHashTag.push(item);
 }
     console.log(arrayRandomHashTag);
-for(var i=0;i<randomnumber;i++){
+for(var i=0;i<randomnumber3;i++){
     var item= hashtagretro[Math.floor(Math.random() * hashtagretro.length)];
     arrayRandomHashTag.push(item);
 }
     console.log(arrayRandomHashTag);
-for(var i=0;i<randomnumber;i++){
+for(var i=0;i<randomnumber4;i++){
     var item= hashtagclassic[Math.floor(Math.random() * hashtagclassic.length)];
     arrayRandomHashTag.push(item);
 }
     console.log(arrayRandomHashTag);
-for(var i=0;i<randomnumber;i++){
+for(var i=0;i<randomnumber5;i++){
     var item= hastagold[Math.floor(Math.random() * hastagold.length)];
     arrayRandomHashTag.push(item);
 }
