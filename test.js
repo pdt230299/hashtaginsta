@@ -47,22 +47,27 @@ for(var i=0;i<randomnumber;i++){
     var item =  hashtag2hand[Math.floor(Math.random() * hashtag2hand.length)];
     arrayRandomHashTag.push(item);
 }
+    console.log(arrayRandomHashTag);
 for(var i=0;i<randomnumber;i++){
      var item =  hashtagvintage[Math.floor(Math.random() * hashtagvintage.length)];
     arrayRandomHashTag.push(item);
 }
+    console.log(arrayRandomHashTag);
 for(var i=0;i<randomnumber;i++){
     var item= hashtagretro[Math.floor(Math.random() * hashtagretro.length)];
     arrayRandomHashTag.push(item);
 }
+    console.log(arrayRandomHashTag);
 for(var i=0;i<randomnumber;i++){
     var item= hashtagclassic[Math.floor(Math.random() * hashtagclassic.length)];
     arrayRandomHashTag.push(item);
 }
+    console.log(arrayRandomHashTag);
 for(var i=0;i<randomnumber;i++){
     var item= hastagold[Math.floor(Math.random() * hastagold.length)];
     arrayRandomHashTag.push(item);
 }
+    console.log(arrayRandomHashTag);
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -89,8 +94,9 @@ shuffle(arrayRandomHashTag);
   <p>
 .<br>
 Follow @nt99.s để có thêm những chiếc áo phông mới trong bộ sưu tập của bạn.
-.<br>
+<br>
+.
 ${arrayRandomHashTag.join('')}</p>
   `;
-  console.log(123);
+  
 });
