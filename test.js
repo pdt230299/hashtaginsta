@@ -42,11 +42,12 @@ var hastagold=[
 
 document.getElementsByClassName("big-button")[0].addEventListener("click", function() {
 var arrayRandomHashTag=[];
-for(var i=0;i<3;i++){
+var randomnumber = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+for(var i=0;i<randomnumber;i++){
     var item =  hashtag2hand[Math.floor(Math.random() * hashtag2hand.length)];
     arrayRandomHashTag.push(item);
 }
-for(var i=0;i<2;i++){
+for(var i=0;i<randomnumber;i++){
     var item =  hashtagvintage[Math.floor(Math.random() * hashtagvintage.length)];
     var item2= hashtagretro[Math.floor(Math.random() * hashtagretro.length)];
     var item3= hashtagclassic[Math.floor(Math.random() * hashtagclassic.length)];
@@ -79,7 +80,8 @@ function shuffle(array) {
 shuffle(arrayRandomHashTag);
   document.getElementsByTagName("div")[0].setAttribute("class", "main"); 
   document.getElementsByTagName("div")[0].innerHTML=`
-  <p>.
+  <p>
+.
 Follow @nt99.s để có thêm những chiếc áo phông mới trong bộ sưu tập của bạn.
 .
 ${arrayRandomHashTag.join('')}</p>
