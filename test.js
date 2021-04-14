@@ -79,7 +79,10 @@ function shuffle(array) {
 shuffle(arrayRandomHashTag);
   document.getElementsByTagName("div")[0].setAttribute("class", "main"); 
   document.getElementsByTagName("div")[0].innerHTML=`
-  <p>${arrayRandomHashTag.join('')}</p>
+  <p>.
+Follow @nt99.s để có thêm những chiếc áo phông mới trong bộ sưu tập của bạn.
+.
+${arrayRandomHashTag.join('')}</p>
   `;
   console.log(123);
 });
