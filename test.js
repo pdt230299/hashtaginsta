@@ -48,14 +48,20 @@ for(var i=0;i<randomnumber;i++){
     arrayRandomHashTag.push(item);
 }
 for(var i=0;i<randomnumber;i++){
-    var item =  hashtagvintage[Math.floor(Math.random() * hashtagvintage.length)];
-    var item2= hashtagretro[Math.floor(Math.random() * hashtagretro.length)];
-    var item3= hashtagclassic[Math.floor(Math.random() * hashtagclassic.length)];
-    var item4= hastagold[Math.floor(Math.random() * hastagold.length)];
+     var item =  hashtagvintage[Math.floor(Math.random() * hashtagvintage.length)];
     arrayRandomHashTag.push(item);
-    arrayRandomHashTag.push(item2);
-    arrayRandomHashTag.push(item3);
-    arrayRandomHashTag.push(item4);
+}
+for(var i=0;i<randomnumber;i++){
+    var item= hashtagretro[Math.floor(Math.random() * hashtagretro.length)];
+    arrayRandomHashTag.push(item);
+}
+for(var i=0;i<randomnumber;i++){
+    var item= hashtagclassic[Math.floor(Math.random() * hashtagclassic.length)];
+    arrayRandomHashTag.push(item);
+}
+for(var i=0;i<randomnumber;i++){
+    var item= hastagold[Math.floor(Math.random() * hastagold.length)];
+    arrayRandomHashTag.push(item);
 }
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
@@ -81,9 +87,9 @@ shuffle(arrayRandomHashTag);
   document.getElementsByTagName("div")[0].setAttribute("class", "main"); 
   document.getElementsByTagName("div")[0].innerHTML=`
   <p>
-.
+.<br>
 Follow @nt99.s để có thêm những chiếc áo phông mới trong bộ sưu tập của bạn.
-.
+.<br>
 ${arrayRandomHashTag.join('')}</p>
   `;
   console.log(123);
