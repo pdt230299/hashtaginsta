@@ -47,6 +47,7 @@ var randomnumber1 = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
     var randomnumber3 = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
     var randomnumber4 = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
     var randomnumber5 = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+    console.log(randomnumber1,randomnumber2,randomnumber3,randomnumber4,randomnumber5);
 for(var i=0;i<randomnumber1;i++){
     var item =  hashtag2hand[Math.floor(Math.random() * hashtag2hand.length)];
     arrayRandomHashTag.push(item);
