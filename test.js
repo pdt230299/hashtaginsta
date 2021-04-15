@@ -96,12 +96,23 @@ function shuffle(array) {
 shuffle(arrayRandomHashTag);
   document.getElementsByTagName("div")[0].setAttribute("class", "main"); 
   document.getElementsByTagName("div")[0].innerHTML=`
-  <p>
-.<br>
-Follow @nt99.s để có thêm những chiếc áo phông mới trong bộ sưu tập của bạn.
-<br>
-.
-${arrayRandomHashTag.join('')}</p>
-  `;
-  
+    <p class ="js-text">
+    .<br>
+    Follow @nt99.s để có thêm những chiếc áo phông mới trong bộ sưu tập của bạn.
+    <br>
+    .
+    ${arrayRandomHashTag.join('')}
+    </p>
+    <button class="big-button js-textareacopybtn">COPY!</button>   
+`;
+  var copyTextareaBtn = document.querySelector('.js-textareacopybtn');
+copyTextareaBtn.addEventListener('click', function() {
+  var copyTextarea = document.querySelector('.js-text').innerText;
+  var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = copyTextarea;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+});
 });
