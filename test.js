@@ -101,6 +101,7 @@ shuffle(arrayRandomHashTag);
     Follow @nt99.s để có thêm những chiếc áo phông mới trong bộ sưu tập của bạn.
     <br>
     .
+    <br>
     ${arrayRandomHashTag.join('')}
     </p>
     <button class="big-button js-textareacopybtn">COPY!</button>   
