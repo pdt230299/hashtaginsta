@@ -97,7 +97,18 @@ shuffle(arrayRandomHashTag);
   document.getElementsByTagName("div")[0].setAttribute("class", "main"); 
   document.getElementsByTagName("div")[0].innerHTML=`
     <p class ="js-text">
-    .<br>
+    .
+    <br>
+    Chất lượng :/10
+    <br>
+    Tình trạng hàng : Còn 
+    <br>
+    .
+    <br>
+    Những hàng mà bọn mình còn: #nt99sConHang
+    <br>
+    .
+    <br>
     Follow @nt99.s để có thêm những chiếc áo phông mới trong bộ sưu tập của bạn.
     <br>
     .
