@@ -112,3 +112,6 @@ p {
   word-break: break-all;
   font-weight: 600;
 }
+.js-textareacopybtn {
+  margin-top: 50px;
+}
