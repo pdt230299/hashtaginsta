@@ -111,7 +111,7 @@ shuffle(arrayRandomHashTag);
     <br>
     .
     <br>
-    ${arrayRandomHashTag.join(' ')}
+    ${arrayRandomHashTag.join(', ')}
     </p>
     <button class="big-button js-textareacopybtn">COPY!</button>   
 `;
