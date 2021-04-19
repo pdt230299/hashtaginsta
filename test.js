@@ -101,8 +101,6 @@ shuffle(arrayRandomHashTag);
     <br>
     Chất lượng :/10
     <br>
-    Tình trạng hàng : Còn 
-    <br>
     .
     <br>
     Những hàng mà bọn mình còn: #nt99sConHang
@@ -113,7 +111,7 @@ shuffle(arrayRandomHashTag);
     <br>
     .
     <br>
-    ${arrayRandomHashTag.join('')}
+    ${arrayRandomHashTag.join(' ')}
     </p>
     <button class="big-button js-textareacopybtn">COPY!</button>   
 `;
