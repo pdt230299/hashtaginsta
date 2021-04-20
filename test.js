@@ -115,28 +115,14 @@ shuffle(arrayRandomHashTag);
     </p>
     <button class="big-button js-textareacopybtn">COPY!</button>   
 `;
-function iosCopyToClipboard(el) {
-    var oldContentEditable = el.contentEditable,
-        oldReadOnly = el.readOnly,
-        range = document.createRange();
-
-    el.contentEditable = true;
-    el.readOnly = false;
-    range.selectNodeContents(el);
-
-    var s = window.getSelection();
-    s.removeAllRanges();
-    s.addRange(range);
-
-    el.setSelectionRange(0, 999999); // A big number, to cover anything that could be inside the element.
-
-    el.contentEditable = oldContentEditable;
-    el.readOnly = oldReadOnly;
-
-    document.execCommand('copy');
-}
   var copyTextareaBtn = document.querySelector('.js-textareacopybtn');
 copyTextareaBtn.addEventListener('click', function() {
-iosCopyToClipboard(copyTextareaBtn);
+  var copyTextarea = document.querySelector('.js-text').innerText;
+  var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = copyTextarea;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
 });
 });
