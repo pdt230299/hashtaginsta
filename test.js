@@ -103,7 +103,7 @@ shuffle(arrayRandomHashTag);
     <br>
     .
     <br>
-    Những hàng mà bọn mình còn: #nt99sConHang
+    #nt99sConHang
     <br>
     .
     <br>
